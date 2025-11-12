@@ -15,5 +15,27 @@
       {"item": "soy sauce", "quantity": "2 tbsp"},
       {"item": "ground beef", "quantity": "2 tbsp"}
     ]
+  },
+
+  {
+    "name": "Sesam tofu",
+    "ingredients": [
+      {"item": "broccoli färsk", "quantity": "1 st"},
+      {"item": "tofu", "quantity": "400g"},
+      {"item": "sojasås", "quantity": "2 msk"},
+      {"item": "salladslök", "quantity": "1 st"}
+    ]
+  },
+
+  {
+    "name": "Icas linsgryta",
+    "ingredients": [
+      {"item": "röda linser (torkade)", "quantity": "2 dl"},
+      {"item": "kokosmjölk", "quantity": "400ml"},
+      {"item": "gul curry", "quantity": "2 msk"},
+      {"item": "gul lök", "quantity": "1 st"},
+      {"item": "vitlöksklyfta", "quantity": "2 st"},
+      {"item": "ris", "quantity": "till servering"}
+    ]
   }
 ]
