@@ -1,29 +1,13 @@
 [
   {
-    "name": "Spaghetti Bolognese",
-    "ingredients": [
-      {"item": "spaghetti", "quantity": "200g"},
-      {"item": "ground beef", "quantity": "300g"},
-      {"item": "tomato sauce", "quantity": "1 cup"}
-    ]
-  },
-  {
-    "name": "Veggie Stir Fry",
-    "ingredients": [
-      {"item": "broccoli", "quantity": "1 head"},
-      {"item": "carrot", "quantity": "2"},
-      {"item": "soy sauce", "quantity": "2 tbsp"},
-      {"item": "ground beef", "quantity": "2 tbsp"}
-    ]
-  },
-
-  {
     "name": "Sesam tofu",
     "ingredients": [
       {"item": "broccoli färsk", "quantity": "1 st"},
       {"item": "tofu", "quantity": "400g"},
       {"item": "sojasås", "quantity": "2 msk"},
-      {"item": "salladslök", "quantity": "1 st"}
+      {"item": "salladslök", "quantity": "1 st"},
+      {"item": "ris", "quantity": "till servering"}
+
     ]
   },
 
