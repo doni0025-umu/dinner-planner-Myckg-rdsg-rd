@@ -37,9 +37,9 @@ recipe_names = [r["name"] for r in recipes]
 st.header("📅 Plan Your Week")
 
 for day in planner:
-    search_term = st.text_input(f"Search recipe for {day}", "")
-    filtered_recipes = [r for r in recipe_names if search_term.lower() in r.lower()]
-    planner[day] = st.selectbox(f"{day}", [""] + filtered_recipes)
+    # search_term = st.text_input(f"Search recipe for {day}", "")
+    # filtered_recipes = [r for r in recipe_names if search_term.lower() in r.lower()]
+    planner[day] = st.selectbox(f"{day}", [""] + recipe_names)
 
 if st.button("Save Plan"):
     save_planner(planner)
