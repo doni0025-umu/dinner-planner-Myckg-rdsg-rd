@@ -1,0 +1,21 @@
+
+
+body {
+    background: url(../assets/dino.png);
+    background-size: 240px 280px;
+    background-repeat: no-repeat;
+    background-position: 10px 200px;
+    background-color: lavender;
+}
+
+body:after {
+    content: " ";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #cfa;
+    opacity: .5;
+    z-index: -1;
+}

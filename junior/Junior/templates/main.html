@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="my-4 row text-center">
+            {%  if message %}
+              <h1 class="alert-info mb-5 border-5">{{ message }}</h1>
+            {% endif %}
+            <h2>Push</h2>
+        </div>
+
+        <div class="row justify-content-center my-4">
+            <div class="col-md-6">
+                <form action="/push" class="bg-info p-5" method="get">
+
+                    <label for="item" class="form-label"> Item: </label>
+                    <input  name="item" class="form-control" id="item" placeholder="item">
+                    <div class="text-center">
+                        <input type="submit" value="Submit" class="btn btn-lg btn-success mt-5">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

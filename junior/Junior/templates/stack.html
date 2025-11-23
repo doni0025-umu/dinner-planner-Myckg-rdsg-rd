@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block body %}
+    <div class="container m-5 " >
+        <div class="text-center">
+            <h1>The Stack</h1>
+        </div>
+        <div class="row ">
+            <div class="col-12 overflow-auto" style="height: 500px;">
+                <ul class="">
+                    {% for ele in stack %}
+                        <li> {{ ele }}</li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

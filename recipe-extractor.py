@@ -20,7 +20,7 @@ def extract_recipe(image_path, output_path="recipe_output.txt"):
 
     ingredients = []
     instructions = []
-    ingredient_pattern = re.compile(r"^\d|tsk|msk|ml|gram|g|kg|liter|krm", re.IGNORECASE)
+    ingredient_pattern = re.compile(r"^(?!\d\.)\d|tsk|msk|ml|gram|g|kg|liter|krm|burk|förp|dl", re.IGNORECASE)
 
     for line in lines:
         if ingredient_pattern.search(line):

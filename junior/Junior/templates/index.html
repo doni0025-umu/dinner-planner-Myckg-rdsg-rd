@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="../static/js/main.js"></script>
+    <title>KIng Kong Junior!</title>
+</head>
+
+<body>
+
+<!-- Note how we are using semantic tags. This makes the site more accessible to screen readers
+and better for SEO. -->
+
+<div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.coca-colacompany.com/" target="_blank">
+                    <img src="../static/assets/junior.jpeg" class="figure-img img-fluid rounded" width="100" alt="...">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-3" href="/">Push</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-3" href="/pop">Pop</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link text-light mx-3" href="/print">Print</a>
+                        </li>
+                        <li class="nav-item">
+                             <input type="button" class="text-light bg-dark nav-link mx-3"
+                                    id="ptoggler" value="start" onclick="toggle_pulses()"/>
+                        </li>
+
+                    </ul>
+                    <button class="text-light bg-dark mx-3" onclick={javascript:visit_random()} title="log out">
+                        <i class="bi bi-box-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-md" style="height: 800px">
+            <div class="row">
+                <div class="col-md-10 overflow-auto">
+                    {% block body %}
+                    {% endblock %}
+                </div>
+                <aside class="col-xl-2 border-start border-success border-5">
+                    <article class="d-flex flex-column">
+                        <h2 class="text-info text-center"> Ohhh Junior!!!</h2>
+                        <p class="text-white bg-primary rounded p-3">
+                            Let me tell you all I know about that friendly ape named: <span
+                                class="fw-bold"> Junior </span>
+                        </p>
+                        <p class="text-muted text-center">
+                            Junior hopes tone day becoming <span style="font-family: 'Lucinda Grande' "> King Kong </span>.
+                        </p>
+
+                        <figure class="figure">
+                            <img src="../static/assets/junior.jpeg" class="figure-img rounded" alt="...">
+                            <figcaption class="figure-caption text-center">All praise Junior!</figcaption>
+                        </figure>
+                    </article>
+                </aside>
+            </div>
+        </section>
+    </main>
+</div></body>
+</html>
+
+<!--
+
+Presentational markup versus semantic markup.
+The divs and spans are for styling and structure.
+
+semantic tags:
+article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time
+
+
+html
+(comments)
+
+Relevant Head Tags
+
+head
+link
+meta
+script
+title
+
+Relevant Body Tags:
+
+a
+article
+aside
+b
+body
+br
+button
+center
+div
+form
+footer
+header
+h1
+h2
+h3
+i
+img
+input
+label
+li
+nav
+option
+p
+pre
+section
+select
+span
+table
+textarea
+thead
+tr
+th
+tbody
+td
+ul
+
+
+
+div and span are not semantic.
+
+Bootstrap classes:
+
+container
+
+-->
